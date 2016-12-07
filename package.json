@@ -23,7 +23,8 @@
     "core-js": "^2.4.1",
     "rxjs": "5.0.0-beta.12",
     "ts-helpers": "^1.1.1",
-    "zone.js": "^0.6.23"
+    "zone.js": "^0.6.23",
+    "http-server" : "*"
   },
   "devDependencies": {
     "@angular/compiler-cli": "2.2.3",
@@ -43,5 +44,8 @@
     "tslint": "^4.0.2",
     "typescript": "~2.0.3",
     "webdriver-manager": "10.2.5"
+  },
+  "scripts": {
+    "start": "http-server ./ -p ${PORT:=5000} -c-1"
   }
 }
